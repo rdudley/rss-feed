@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Yahoo RSS Feed Reader</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <a class="navbar-brand" href="http://randolphdudley.com/rss-feed/">Simple Yahoo RSS Feed Reader</a>
+	<div class="container">
+		<form id="search-form" class="nav navbar-form navbar-right" role="search">
+			<div class="form-group">
+				<input name="search-query" type="text" required class="form-control" id="search-query" placeholder="Search" requried>
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		<button id="get-news" type="button" class="btn btn-default navbar-btn navbar-right">Get Latest News</button>
+		&nbsp;&nbsp;</div>
+</div>
+<div class="container">
+	<div id="data-container">
+		<div class="page-header">
+			<h1>Simple Yahoo RSS Feed Reader</h1>
+		</div>
+		<p>This is a very simple RSS Feed reader that will:</p>
+		<ol>
+			<li>Display the top 5 "Latest News and Headlines" items from Yahoo's Latest News &amp; Headlines RSS Feed</li>
+			<li>Provide for a simple search within the same feed displaying the top 5 results</li>
+			<li>Cache feed contents and check against the feed TTL if working directory permissions allow</li>
+			<li>Check for invalid dates in the RSS feed and format item dates to a default timezone</li> 
+		</ol>
+		<p>This example uses asynchronous client-side requests to fetch data from the server. The server-side scripts are arranged in a very simplistic manner to show an understanding of MVC and OOP design patterns, but the example has kept functionality of these scripts limited and to work within the project specifications. A simple solution for a simple task.</p>
+		<p>Source files are available for download in <a href="">zip</a> or <a href="">tar</a> formats, and available at <a href="">Github</a>.</p>
+	</div>
+</div>
+</body>
+</html>
